@@ -1,0 +1,6 @@
+res://Scenes/test_dialogue.tscn
+res://Scripts/DialogueResource.gd
+res://Dialogues/test_dial.tres
+res://Dialogues/dial_testtt.tres
+res://Scripts/DialogueClass.gd
+res://Scripts/DialogueHandler.gd
