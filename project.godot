@@ -11,5 +11,13 @@ config_version=5
 [application]
 
 config/name="the-last-hope"
+run/main_scene="res://Scenes/test_dialogue.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
