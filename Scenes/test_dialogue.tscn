@@ -1,10 +1,63 @@
-[gd_scene load_steps=6 format=3 uid="uid://b2l84semonvlh"]
+[gd_scene load_steps=11 format=3 uid="uid://b2l84semonvlh"]
 
 [ext_resource type="Script" path="res://Scripts/DialogueHandler.gd" id="1_40u0d"]
 [ext_resource type="Texture2D" uid="uid://inisfng23nlf" path="res://Sprites/textbox.png" id="1_oj4qw"]
 [ext_resource type="Texture2D" uid="uid://cbmb1wfiq3gb1" path="res://Sprites/1645827872_6-abrakadabra-fun-p-danganronpa-komnati-11.jpg" id="1_p5ufl"]
 [ext_resource type="Resource" uid="uid://cma3ttwc5kd60" path="res://Dialogues/test_dial.tres" id="2_mo6gi"]
 [ext_resource type="Texture2D" uid="uid://cghct3404ynsx" path="res://Sprites/Без названия124_20240313163040.png" id="2_yvqbc"]
+[ext_resource type="AudioStream" uid="uid://k0dh46awlt05" path="res://Music/Y2mate.mx - New Danganronpa V3 O.S.T. White - 10. Become Friends (256 kbps).mp3" id="6_b43y7"]
+[ext_resource type="AudioStream" uid="uid://cs1r5pxlfs04b" path="res://Music/Danganronpa Sound Effect - Text Advancing (256  kbps).mp3" id="6_hbx8i"]
+
+[sub_resource type="Animation" id="Animation_m46rw"]
+resource_name = "change_sprite"
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.34902), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"anim_sprite_change"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_wx4ei"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pa5am"]
+_data = {
+"RESET": SubResource("Animation_wx4ei"),
+"change_sprite": SubResource("Animation_m46rw")
+}
 
 [node name="Node2D" type="Node2D"]
 
@@ -27,6 +80,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_yvqbc")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DialogueUI/Sprite"]
+libraries = {
+"": SubResource("AnimationLibrary_pa5am")
+}
 
 [node name="TextBox" type="TextureRect" parent="DialogueUI"]
 anchors_preset = 15
@@ -64,3 +122,12 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/normal_font_size = 30
 text = "TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText"
+
+[node name="Click" type="AudioStreamPlayer" parent="DialogueUI"]
+stream = ExtResource("6_hbx8i")
+volume_db = -15.928
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_b43y7")
+volume_db = -27.171
+autoplay = true

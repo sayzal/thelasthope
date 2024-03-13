@@ -1,11 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710338037
+::res://::1710344138
 icon.svg::CompressedTexture2D::6676492520241834030::1710330966::1710330974::1::::<><>::
-::res://Scenes/::1710338192
-test_dialogue.tscn::PackedScene::4306284018163157913::1710338192::0::1::::<><>::res://Scripts/DialogueHandler.gd<>uid://inisfng23nlf::::res://Sprites/textbox.png<>uid://cbmb1wfiq3gb1::::res://Sprites/1645827872_6-abrakadabra-fun-p-danganronpa-komnati-11.jpg<>uid://cghct3404ynsx::::res://Sprites/Без названия124_20240313163040.png
-::res://Scripts/::1710338192
-DialogueHandler.gd::GDScript::-1::1710338013::0::1::::<>CanvasLayer<>::
-DialogueResource.gd::GDScript::-1::1710338192::0::1::::<>Resource<>::
+::res://Dialogues/::1710344138
+test_dial.tres::Resource/Dialogue::5616842528984953139::1710343934::0::1::::<><>::uid://cghct3404ynsx::::res://Sprites/Без названия124_20240313163040.png<>res://Scripts/DialogueResource.gd<>uid://c1nskf30i5rm0::::res://Sprites/Без названия124_20240313163128.png<>uid://2n7r2o5wuqq0::::res://Sprites/Без названия124_20240313162819.png
+::res://Music/::1710344138
+Danganronpa Sound Effect - Text Advancing (256  kbps).mp3::AudioStreamMP3::6091000961058478399::1710344135::1710344139::1::::<><>::
+Y2mate.mx - New Danganronpa V3 O.S.T. White - 10. Become Friends (256 kbps).mp3::AudioStreamMP3::753694102863397556::1710343684::1710343686::1::::<><>::
+::res://Scenes/::1710344034
+test_dialogue.tscn::PackedScene::4306284018163157913::1710344034::0::1::::<><>::res://Scripts/DialogueHandler.gd<>uid://inisfng23nlf::::res://Sprites/textbox.png<>uid://cbmb1wfiq3gb1::::res://Sprites/1645827872_6-abrakadabra-fun-p-danganronpa-komnati-11.jpg<>uid://cma3ttwc5kd60::::res://Dialogues/test_dial.tres<>uid://cghct3404ynsx::::res://Sprites/Без названия124_20240313163040.png<>uid://k0dh46awlt05::::res://Music/Y2mate.mx - New Danganronpa V3 O.S.T. White - 10. Become Friends (256 kbps).mp3
+::res://Scripts/::1710343971
+DialogueHandler.gd::GDScript::-1::1710343971::0::1::::<>CanvasLayer<>::
+DialogueResource.gd::GDScript::-1::1710339607::0::1::::Dialogue<>Resource<>::
 ::res://Sprites/::1710337848
 1645827872_6-abrakadabra-fun-p-danganronpa-komnati-11.jpg::CompressedTexture2D::4867911055330943092::1710336034::1710336035::1::::<><>::
 textbox.png::CompressedTexture2D::588865823148473663::1710333716::1710333717::1::::<><>::
