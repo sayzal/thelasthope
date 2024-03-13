@@ -1,14 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710337094
+::res://::1710338037
 icon.svg::CompressedTexture2D::6676492520241834030::1710330966::1710330974::1::::<><>::
-Без названия124_20240313163040.png::CompressedTexture2D::5208581954191271199::1710337094::1710337096::1::::<><>::
-Без названия124_20240313163108.png::CompressedTexture2D::637722090242258821::1710337094::1710337096::1::::<><>::
-Без названия124_20240313163128.png::CompressedTexture2D::6625699283605716357::1710337094::1710337096::1::::<><>::
-Без названия124_20240313163154.png::CompressedTexture2D::8735380702292733421::1710337094::1710337096::1::::<><>::
-::res://Scenes/::1710337017
-test_dialogue.tscn::PackedScene::4306284018163157913::1710337017::0::1::::<><>::uid://inisfng23nlf::::res://Sprites/textbox.png<>uid://cbmb1wfiq3gb1::::res://Sprites/1645827872_6-abrakadabra-fun-p-danganronpa-komnati-11.jpg<>uid://2n7r2o5wuqq0::::res://Sprites/Без названия124_20240313162819.png
-::res://Scripts/::1710333165
-::res://Sprites/::1710336577
+::res://Scenes/::1710338192
+test_dialogue.tscn::PackedScene::4306284018163157913::1710338192::0::1::::<><>::res://Scripts/DialogueHandler.gd<>uid://inisfng23nlf::::res://Sprites/textbox.png<>uid://cbmb1wfiq3gb1::::res://Sprites/1645827872_6-abrakadabra-fun-p-danganronpa-komnati-11.jpg<>uid://cghct3404ynsx::::res://Sprites/Без названия124_20240313163040.png
+::res://Scripts/::1710338192
+DialogueHandler.gd::GDScript::-1::1710338013::0::1::::<>CanvasLayer<>::
+DialogueResource.gd::GDScript::-1::1710338192::0::1::::<>Resource<>::
+::res://Sprites/::1710337848
 1645827872_6-abrakadabra-fun-p-danganronpa-komnati-11.jpg::CompressedTexture2D::4867911055330943092::1710336034::1710336035::1::::<><>::
 textbox.png::CompressedTexture2D::588865823148473663::1710333716::1710333717::1::::<><>::
 Без названия124_20240313162819.png::CompressedTexture2D::1923910432445544505::1710336542::1710336543::1::::<><>::
+Без названия124_20240313163040.png::CompressedTexture2D::5208581954191271199::1710337094::1710337848::1::::<><>::
+Без названия124_20240313163108.png::CompressedTexture2D::637722090242258821::1710337094::1710337848::1::::<><>::
+Без названия124_20240313163128.png::CompressedTexture2D::6625699283605716357::1710337094::1710337848::1::::<><>::
+Без названия124_20240313163154.png::CompressedTexture2D::8735380702292733421::1710337094::1710337848::1::::<><>::

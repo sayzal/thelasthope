@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cghct3404ynsx"
-path="res://.godot/imported/Без названия124_20240313163040.png-c43403c4779708d7abfa08382e4f1afb.ctex"
+uid="uid://c1nskf30i5rm0"
+path="res://.godot/imported/Без названия124_20240313163128.png-9acdc0aeb749a463733b53e834fe5625.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Без названия124_20240313163040.png"
-dest_files=["res://.godot/imported/Без названия124_20240313163040.png-c43403c4779708d7abfa08382e4f1afb.ctex"]
+source_file="res://Sprites/Без названия124_20240313163128.png"
+dest_files=["res://.godot/imported/Без названия124_20240313163128.png-9acdc0aeb749a463733b53e834fe5625.ctex"]
 
 [params]
 
