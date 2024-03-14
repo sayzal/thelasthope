@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jc6gpifmtjg4"
-path="res://.godot/imported/Без названия124_20240313163108.png-e614623eb084070853b45db96f13636e.ctex"
+uid="uid://cghct3404ynsx"
+path="res://.godot/imported/яро1.png-59dbc923130b5379b8f0be9b50261a3b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Без названия124_20240313163108.png"
-dest_files=["res://.godot/imported/Без названия124_20240313163108.png-e614623eb084070853b45db96f13636e.ctex"]
+source_file="res://Sprites/яро1.png"
+dest_files=["res://.godot/imported/яро1.png-59dbc923130b5379b8f0be9b50261a3b.ctex"]
 
 [params]
 

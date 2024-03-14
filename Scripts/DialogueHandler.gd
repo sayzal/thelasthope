@@ -10,19 +10,24 @@ extends CanvasLayer
 var inDialogue : bool = false
 var curProgress : int = 0
 var canProceed = false
+var textAppearTween : Tween
+var textProceedTween : Tween 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	begin_dialogue()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	if (Input.is_action_just_pressed("LMB")):
+func _process(_delta):
+	if (Input.is_action_just_pressed("LMB") and canProceed):
 		if (charText.visible_ratio == 1):
 			if (inDialogue):
 				proceed_dialogue()
 			else:
 				begin_dialogue()
+		else:
+			textAppearTween.stop()
+			charText.visible_ratio = 1
 
 func begin_dialogue():
 	proceed_dialogue()
@@ -32,6 +37,8 @@ func proceed_dialogue():
 	if (curProgress == curDialogue.dialogueText.size()):
 		end_dialogue()
 	else:
+		textProceedTween = create_tween()
+		textProceedTween.tween_property(self, "canProceed", true, 0.11)
 		charName.text = curDialogue.dialogueName[curProgress]
 		charText.text = curDialogue.dialogueText[curProgress]
 		if (curProgress != 0 and curDialogue.dialogueSprite[curProgress] != curDialogue.dialogueSprite[curProgress - 1]):
@@ -50,5 +57,5 @@ func anim_sprite_change():
 	
 func text_appear():
 	charText.visible_ratio = 0
-	var tween = create_tween()
-	tween.tween_property(charText, "visible_ratio", 1, 0.5)
+	textAppearTween = create_tween()
+	textAppearTween.tween_property(charText, "visible_ratio", 1, 0.5)

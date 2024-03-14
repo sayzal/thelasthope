@@ -3,10 +3,25 @@
 [ext_resource type="Script" path="res://Scripts/DialogueHandler.gd" id="1_40u0d"]
 [ext_resource type="Texture2D" uid="uid://inisfng23nlf" path="res://Sprites/textbox.png" id="1_oj4qw"]
 [ext_resource type="Texture2D" uid="uid://cbmb1wfiq3gb1" path="res://Sprites/1645827872_6-abrakadabra-fun-p-danganronpa-komnati-11.jpg" id="1_p5ufl"]
-[ext_resource type="Resource" uid="uid://cma3ttwc5kd60" path="res://Dialogues/test_dial.tres" id="2_mo6gi"]
-[ext_resource type="Texture2D" uid="uid://cghct3404ynsx" path="res://Sprites/Без названия124_20240313163040.png" id="2_yvqbc"]
+[ext_resource type="Resource" uid="uid://beiu0sl7cvc4l" path="res://Dialogues/примердиалога.tres" id="2_jy5r3"]
+[ext_resource type="Texture2D" uid="uid://cghct3404ynsx" path="res://Sprites/яро1.png" id="2_yvqbc"]
 [ext_resource type="AudioStream" uid="uid://k0dh46awlt05" path="res://Music/Y2mate.mx - New Danganronpa V3 O.S.T. White - 10. Become Friends (256 kbps).mp3" id="6_b43y7"]
 [ext_resource type="AudioStream" uid="uid://cs1r5pxlfs04b" path="res://Music/Danganronpa Sound Effect - Text Advancing (256  kbps).mp3" id="6_hbx8i"]
+
+[sub_resource type="Animation" id="Animation_wx4ei"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_m46rw"]
 resource_name = "change_sprite"
@@ -38,21 +53,6 @@ tracks/1/keys = {
 }]
 }
 
-[sub_resource type="Animation" id="Animation_wx4ei"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pa5am"]
 _data = {
 "RESET": SubResource("Animation_wx4ei"),
@@ -63,7 +63,7 @@ _data = {
 
 [node name="DialogueUI" type="CanvasLayer" parent="."]
 script = ExtResource("1_40u0d")
-curDialogue = ExtResource("2_mo6gi")
+curDialogue = ExtResource("2_jy5r3")
 
 [node name="BG" type="TextureRect" parent="DialogueUI"]
 anchors_preset = 15
@@ -131,3 +131,5 @@ volume_db = -15.928
 stream = ExtResource("6_b43y7")
 volume_db = -27.171
 autoplay = true
+
+[node name="DialogueImporter" type="Node" parent="."]
