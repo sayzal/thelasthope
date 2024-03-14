@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cs1r5pxlfs04b"
+path="res://.godot/imported/Danganronpa Sound Effect - Text Advancing (256  kbps).mp3-21050cec0b3a4a847962fea8f2974621.mp3str"
+
+[deps]
+
+source_file="res://Music/Danganronpa Sound Effect - Text Advancing (256  kbps).mp3"
+dest_files=["res://.godot/imported/Danganronpa Sound Effect - Text Advancing (256  kbps).mp3-21050cec0b3a4a847962fea8f2974621.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
