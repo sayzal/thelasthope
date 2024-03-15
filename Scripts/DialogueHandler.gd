@@ -1,12 +1,14 @@
 extends CanvasLayer
 
 @export var curDialogue : Dialogue
+@onready var BG : TextureRect = $BG
 @onready var charSprite : TextureRect = $Sprite
 @onready var charName : RichTextLabel = $Name
-@onready var charText : RichTextLabel = $RichTextLabel
-@onready var charAnim : AnimationPlayer = $Sprite/AnimationPlayer
+@onready var charText : RichTextLabel = $Text
+@onready var charAnim : AnimationPlayer = $Sprite/SpriteAnimation
+@onready var bgAnim : AnimationPlayer = $BG/BGAnimation
 @onready var sfxClick : AudioStreamPlayer = $Click
-@onready var autoHolder : RichTextLabel = $"auto placeholder"
+@onready var autoHolder : RichTextLabel = $"Auto"
 
 var inDialogue : bool = false
 var curProgress : int = 0
@@ -14,6 +16,7 @@ var canProceed = false
 var textAppearTween : Tween
 var textProceedTween : Tween 
 var textAutoTween : Tween
+var textBGTween : Tween
 var isAuto : bool = false
 var curDelay : int = 2
 
@@ -57,11 +60,14 @@ func proceed_dialogue():
 		if (curProgress != 0 and curDialogue.dialogueSprite[curProgress] != curDialogue.dialogueSprite[curProgress - 1]):
 			charAnim.stop()
 			charAnim.play("change_sprite")
+		if (curDialogue.dialogueBackground[curProgress] != null):
+			switch_background()
 		curProgress += 1
 
 func end_dialogue():
 	inDialogue = false
 	curProgress = 0
+	print("end")
 	
 func anim_sprite_change():
 		charSprite.texture = curDialogue.dialogueSprite[curProgress - 1]
@@ -88,3 +94,9 @@ func stop_auto():
 	isAuto = false
 	autoHolder.visible_ratio = 0
 	textAutoTween.stop()
+
+func switch_background():
+	bgAnim.stop()
+	bgAnim.play("change_bg")
+	textBGTween = create_tween()
+	textBGTween.tween_property(BG, "texture", curDialogue.dialogueBackground[curProgress], 0.1)

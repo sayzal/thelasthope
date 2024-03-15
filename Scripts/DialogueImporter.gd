@@ -10,6 +10,7 @@ func _run():
 	newDialogue.dialogueName.resize(allStrings.size() - 1)
 	newDialogue.dialogueText.resize(allStrings.size() - 1)
 	newDialogue.dialogueSprite.resize(allStrings.size() - 1)
+	newDialogue.dialogueBackground.resize(allStrings.size() - 1)
 	for n in allStrings.size() - 1:
 		newDialogue.dialogueName[n] = allStrings[n].split("/")[0]
 		newDialogue.dialogueText[n] = allStrings[n].split("/")[3]

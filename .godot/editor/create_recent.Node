@@ -1,9 +1,9 @@
+AnimationPlayer
 RichTextLabel
 Node
 AudioStreamPlayer
 AudioStreamPlayer2D
 AudioListener2D
-AnimationPlayer
 TextureRect
 CanvasLayer
 CanvasGroup

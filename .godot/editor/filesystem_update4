@@ -3,3 +3,5 @@ res://Scenes/DialogueImporter.gd
 res://Scripts/DialogueHandler.gd
 res://Dialogues/test.tres
 res://Text Files/test.txt
+res://Scripts/DialogueResource.gd
+res://Scripts/DialogueImporter.gd
