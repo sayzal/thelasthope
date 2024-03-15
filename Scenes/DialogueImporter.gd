@@ -1,7 +1,7 @@
 @tool
 extends EditorScript
 
-var textFile = "примердиалога"
+var textFile = "test"
 
 func _run():
 	var checkFile = FileAccess.open("res://Text Files/" + textFile + ".txt", FileAccess.READ)

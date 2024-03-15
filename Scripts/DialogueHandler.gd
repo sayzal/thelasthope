@@ -6,16 +6,21 @@ extends CanvasLayer
 @onready var charText : RichTextLabel = $RichTextLabel
 @onready var charAnim : AnimationPlayer = $Sprite/AnimationPlayer
 @onready var sfxClick : AudioStreamPlayer = $Click
+@onready var autoHolder : RichTextLabel = $"auto placeholder"
 
 var inDialogue : bool = false
 var curProgress : int = 0
 var canProceed = false
 var textAppearTween : Tween
 var textProceedTween : Tween 
+var textAutoTween : Tween
+var isAuto : bool = false
+var curDelay : int = 2
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	begin_dialogue()
+	autoHolder.visible_ratio = 0
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
@@ -28,6 +33,11 @@ func _process(_delta):
 		else:
 			textAppearTween.stop()
 			charText.visible_ratio = 1
+	if (Input.is_action_just_pressed("auto")):
+		if (!isAuto):
+			start_auto()
+		else:
+			stop_auto()
 
 func begin_dialogue():
 	proceed_dialogue()
@@ -45,6 +55,7 @@ func proceed_dialogue():
 		if (curProgress != 0):
 			sfxClick.play()
 		if (curProgress != 0 and curDialogue.dialogueSprite[curProgress] != curDialogue.dialogueSprite[curProgress - 1]):
+			charAnim.stop()
 			charAnim.play("change_sprite")
 		curProgress += 1
 
@@ -61,3 +72,19 @@ func text_appear():
 	if (curProgress != 0 and curDialogue.dialogueSprite[curProgress] != curDialogue.dialogueSprite[curProgress - 1]):
 		textAppearTween.tween_property(charSprite, "texture", curDialogue.dialogueSprite[curProgress], 0.1)
 	textAppearTween.tween_property(charText, "visible_ratio", 1, 0.5)
+	
+func start_auto():
+	isAuto = true
+	autoHolder.visible_ratio = 1
+	if (curDialogue.dialogueText[curProgress].length() > 30):
+		curDelay = 5
+	else:
+		curDelay = 2
+	textAutoTween = create_tween()
+	textAutoTween.tween_callback(proceed_dialogue).set_delay(curDelay)
+	textAutoTween.tween_callback(start_auto).set_delay(curDelay)
+	
+func stop_auto():
+	isAuto = false
+	autoHolder.visible_ratio = 0
+	textAutoTween.stop()
