@@ -1,8 +1,5 @@
 res://Scenes/test_dialogue.tscn
-res://Dialogues/test_dial.tres
 res://Scenes/DialogueImporter.gd
-res://Text Files/test.txt
-res://Scripts/DialogueResource.gd
-res://Dialogues/testing.tres
+res://Scripts/DialogueHandler.gd
 res://Dialogues/test.tres
-res://Text Files/примердиалога.txt
+res://Text Files/test.txt

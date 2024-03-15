@@ -1,14 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710433563
+::res://::1710503869
 icon.svg::CompressedTexture2D::6676492520241834030::1710330966::1710330974::1::::<><>::
-::res://Dialogues/::1710433564
-test_dial.tres::Resource/Dialogue::5616842528984953139::1710433564::0::1::::<><>::uid://cghct3404ynsx::::res://Sprites/яро1.png<>res://Scripts/DialogueResource.gd<>uid://c1nskf30i5rm0::::res://Sprites/яро3.png<>uid://dwpqpdfre4vej::::res://Sprites/Без названия124_20240313163154.png<>uid://2n7r2o5wuqq0::::res://Sprites/Без названия124_20240313162819.png
+::res://Dialogues/::1710435617
+base_dial.tres::Resource/Dialogue::5616842528984953139::1710433564::0::1::::<><>::uid://cghct3404ynsx::::res://Sprites/яро1.png<>res://Scripts/DialogueResource.gd<>uid://c1nskf30i5rm0::::res://Sprites/яро3.png<>uid://dwpqpdfre4vej::::res://Sprites/Без названия124_20240313163154.png<>uid://2n7r2o5wuqq0::::res://Sprites/Без названия124_20240313162819.png
+test.tres::Resource/Dialogue::3034935460521974707::1710435556::0::1::::<><>::uid://cghct3404ynsx::::res://Sprites/яро1.png<>uid://jc6gpifmtjg4::::res://Sprites/яро2.png<>uid://c1nskf30i5rm0::::res://Sprites/яро3.png<>res://Scripts/DialogueResource.gd
+примердиалога.tres::Resource/Dialogue::2684951028851246581::1710435617::0::1::::<><>::uid://cghct3404ynsx::::res://Sprites/яро1.png<>uid://jc6gpifmtjg4::::res://Sprites/яро2.png<>res://Scripts/DialogueResource.gd
 ::res://Music/::1710344139
 Danganronpa Sound Effect - Text Advancing (256  kbps).mp3::AudioStreamMP3::6091000961058478399::1710344135::1710344139::1::::<><>::
 Y2mate.mx - New Danganronpa V3 O.S.T. White - 10. Become Friends (256 kbps).mp3::AudioStreamMP3::753694102863397556::1710343684::1710343686::1::::<><>::
-::res://Scenes/::1710433670
-DialogueImporter.gd::GDScript::-1::1710433502::0::1::::<>EditorScript<>::
-test_dialogue.tscn::PackedScene::4306284018163157913::1710433741::0::1::::<><>::res://Scripts/DialogueHandler.gd<>uid://inisfng23nlf::::res://Sprites/textbox.png<>uid://cbmb1wfiq3gb1::::res://Sprites/1645827872_6-abrakadabra-fun-p-danganronpa-komnati-11.jpg<>uid://cma3ttwc5kd60::::res://Dialogues/test_dial.tres<>uid://cghct3404ynsx::::res://Sprites/яро1.png<>uid://k0dh46awlt05::::res://Music/Y2mate.mx - New Danganronpa V3 O.S.T. White - 10. Become Friends (256 kbps).mp3<>uid://cs1r5pxlfs04b::::res://Music/Danganronpa Sound Effect - Text Advancing (256  kbps).mp3<>res://Scenes/DialogueImporter.gd
+::res://Scenes/::1710436636
+DialogueImporter.gd::GDScript::-1::1710435615::0::1::::<>EditorScript<>::
+test_dialogue.tscn::PackedScene::4306284018163157913::1710436636::0::1::::<><>::res://Scripts/DialogueHandler.gd<>uid://inisfng23nlf::::res://Sprites/textbox.png<>uid://cbmb1wfiq3gb1::::res://Sprites/1645827872_6-abrakadabra-fun-p-danganronpa-komnati-11.jpg<>uid://beiu0sl7cvc4l::::res://Dialogues/примердиалога.tres<>uid://cghct3404ynsx::::res://Sprites/яро1.png<>uid://k0dh46awlt05::::res://Music/Y2mate.mx - New Danganronpa V3 O.S.T. White - 10. Become Friends (256 kbps).mp3<>uid://cs1r5pxlfs04b::::res://Music/Danganronpa Sound Effect - Text Advancing (256  kbps).mp3
 ::res://Scripts/::1710433670
 DialogueHandler.gd::GDScript::-1::1710349396::0::1::::<>CanvasLayer<>::
 DialogueResource.gd::GDScript::-1::1710433670::0::1::::Dialogue<>Resource<>::
@@ -20,5 +22,6 @@ textbox.png::CompressedTexture2D::588865823148473663::1710333716::1710333717::1:
 яро1.png::CompressedTexture2D::5208581954191271199::1710337094::1710433541::1::::<><>::
 яро2.png::CompressedTexture2D::637722090242258821::1710337094::1710433558::1::::<><>::
 яро3.png::CompressedTexture2D::6625699283605716357::1710337094::1710433564::1::::<><>::
-::res://Text Files/::1710433336
+::res://Text Files/::1710435607
 test.txt::TextFile::-1::1710433336::0::1::::<><>::
+примердиалога.txt::TextFile::-1::1710435607::0::1::::<><>::

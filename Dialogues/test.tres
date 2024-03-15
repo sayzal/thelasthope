@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Dialogue" load_steps=5 format=3 uid="uid://bjie7c3ikajk2"]
+[gd_resource type="Resource" script_class="Dialogue" load_steps=5 format=3 uid="uid://2vxnrinqyj7h"]
 
 [ext_resource type="Texture2D" uid="uid://cghct3404ynsx" path="res://Sprites/яро1.png" id="1_yccs6"]
 [ext_resource type="Texture2D" uid="uid://jc6gpifmtjg4" path="res://Sprites/яро2.png" id="2_bdppl"]
@@ -7,6 +7,6 @@
 
 [resource]
 script = ExtResource("4_jvvfi")
-dialogueName = Array[String](["Яро", "Яро", "Яморо", "Яро", "Яро"])
-dialogueText = Array[String](["Привет.", "Я крутой.", "Нет...", "............", "Меня ещё никогда так сильно не унижали."])
-dialogueSprite = Array[Texture2D]([ExtResource("1_yccs6"), ExtResource("1_yccs6"), ExtResource("1_yccs6"), ExtResource("2_bdppl"), ExtResource("3_oas3o")])
+dialogueName = Array[String](["Яро", "Яро", "Яморо", "Яро", "Яро", "Яро"])
+dialogueText = Array[String](["Привет.", "Я крутой.", "Нет...", "............", "Меня ещё никогда так сильно не унижали.", "ЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖ"])
+dialogueSprite = Array[Texture2D]([ExtResource("1_yccs6"), ExtResource("1_yccs6"), ExtResource("1_yccs6"), ExtResource("2_bdppl"), ExtResource("3_oas3o"), ExtResource("2_bdppl")])
