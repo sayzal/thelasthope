@@ -3,13 +3,14 @@
 [ext_resource type="Script" path="res://Scripts/DialogueHandler.gd" id="1_40u0d"]
 [ext_resource type="Texture2D" uid="uid://inisfng23nlf" path="res://Sprites/textbox.png" id="1_oj4qw"]
 [ext_resource type="Texture2D" uid="uid://cbmb1wfiq3gb1" path="res://Sprites/1645827872_6-abrakadabra-fun-p-danganronpa-komnati-11.jpg" id="1_p5ufl"]
-[ext_resource type="Resource" uid="uid://beiu0sl7cvc4l" path="res://Dialogues/примердиалога.tres" id="2_jy5r3"]
+[ext_resource type="Resource" uid="uid://bjie7c3ikajk2" path="res://Dialogues/test.tres" id="2_jijde"]
 [ext_resource type="Texture2D" uid="uid://cghct3404ynsx" path="res://Sprites/яро1.png" id="2_yvqbc"]
 [ext_resource type="AudioStream" uid="uid://k0dh46awlt05" path="res://Music/Y2mate.mx - New Danganronpa V3 O.S.T. White - 10. Become Friends (256 kbps).mp3" id="6_b43y7"]
 [ext_resource type="AudioStream" uid="uid://cs1r5pxlfs04b" path="res://Music/Danganronpa Sound Effect - Text Advancing (256  kbps).mp3" id="6_hbx8i"]
 
 [sub_resource type="Animation" id="Animation_wx4ei"]
 length = 0.001
+step = 0.05
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -38,20 +39,6 @@ tracks/0/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.34902), Color(1, 1, 1, 1)]
 }
-tracks/1/type = "method"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("..")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0.1),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"anim_sprite_change"
-}]
-}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pa5am"]
 _data = {
@@ -63,7 +50,7 @@ _data = {
 
 [node name="DialogueUI" type="CanvasLayer" parent="."]
 script = ExtResource("1_40u0d")
-curDialogue = ExtResource("2_jy5r3")
+curDialogue = ExtResource("2_jijde")
 
 [node name="BG" type="TextureRect" parent="DialogueUI"]
 anchors_preset = 15

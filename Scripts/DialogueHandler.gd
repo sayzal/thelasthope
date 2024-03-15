@@ -38,14 +38,14 @@ func proceed_dialogue():
 		end_dialogue()
 	else:
 		textProceedTween = create_tween()
-		textProceedTween.tween_property(self, "canProceed", true, 0.11)
+		textProceedTween.tween_property(self, "canProceed", true, 0.15)
 		charName.text = curDialogue.dialogueName[curProgress]
 		charText.text = curDialogue.dialogueText[curProgress]
-		if (curProgress != 0 and curDialogue.dialogueSprite[curProgress] != curDialogue.dialogueSprite[curProgress - 1]):
-			charAnim.play("change_sprite")
 		text_appear()
 		if (curProgress != 0):
 			sfxClick.play()
+		if (curProgress != 0 and curDialogue.dialogueSprite[curProgress] != curDialogue.dialogueSprite[curProgress - 1]):
+			charAnim.play("change_sprite")
 		curProgress += 1
 
 func end_dialogue():
@@ -58,4 +58,6 @@ func anim_sprite_change():
 func text_appear():
 	charText.visible_ratio = 0
 	textAppearTween = create_tween()
+	if (curProgress != 0 and curDialogue.dialogueSprite[curProgress] != curDialogue.dialogueSprite[curProgress - 1]):
+		textAppearTween.tween_property(charSprite, "texture", curDialogue.dialogueSprite[curProgress], 0.1)
 	textAppearTween.tween_property(charText, "visible_ratio", 1, 0.5)
