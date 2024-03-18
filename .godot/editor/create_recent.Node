@@ -1,7 +1,7 @@
+AudioStreamPlayer
 AnimationPlayer
 RichTextLabel
 Node
-AudioStreamPlayer
 AudioStreamPlayer2D
 AudioListener2D
 TextureRect

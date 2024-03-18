@@ -1,20 +1,22 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710535739
+::res://::1710781860
 icon.svg::CompressedTexture2D::6676492520241834030::1710330966::1710330974::1::::<><>::
-::res://Dialogues/::1710535995
+::res://Dialogues/::1710587368
 base_dial.tres::Resource/Resource::5616842528984953139::1710433564::0::1::::<><>::uid://cghct3404ynsx::::res://Sprites/яро1.png<>res://Scripts/DialogueResource.gd<>uid://c1nskf30i5rm0::::res://Sprites/яро3.png<>uid://dwpqpdfre4vej::::res://Sprites/Без названия124_20240313163154.png<>uid://2n7r2o5wuqq0::::res://Sprites/Без названия124_20240313162819.png
-test.tres::Resource/Dialogue::1939871323084906443::1710535995::0::1::::<><>::uid://cghct3404ynsx::::res://Sprites/яро1.png<>uid://jc6gpifmtjg4::::res://Sprites/яро2.png<>uid://c1nskf30i5rm0::::res://Sprites/яро3.png<>res://Scripts/DialogueResource.gd
+photo_2024-03-16_13-58-23.jpg::CompressedTexture2D::3441069576429978758::1710587354::1710587357::1::::<><>::
+photo_2024-03-16_14-03-16.jpg::CompressedTexture2D::2906024006503930595::1710587354::1710587357::1::::<><>::
+test.tres::Resource/Dialogue::1939871323084906443::1710587368::0::1::::<><>::uid://d38ew5q2qt574::::res://Sprites/1672750543_1-zefirka-club-p-danganronpa-foni-iz-igri-1.jpg<>uid://cbmb1wfiq3gb1::::res://Sprites/1645827872_6-abrakadabra-fun-p-danganronpa-komnati-11.jpg<>uid://jc6gpifmtjg4::::res://Sprites/яро2.png<>uid://bpa46bvrvkj8a::::res://Dialogues/photo_2024-03-16_13-58-23.jpg<>uid://c1nskf30i5rm0::::res://Sprites/яро3.png<>res://Scripts/DialogueResource.gd<>uid://bhnx15gce3tjf::::res://Dialogues/photo_2024-03-16_14-03-16.jpg
 примердиалога.tres::Resource/Resource::2684951028851246581::1710435617::0::1::::<><>::uid://cghct3404ynsx::::res://Sprites/яро1.png<>uid://jc6gpifmtjg4::::res://Sprites/яро2.png<>res://Scripts/DialogueResource.gd
 ::res://Music/::1710344139
 Danganronpa Sound Effect - Text Advancing (256  kbps).mp3::AudioStreamMP3::6091000961058478399::1710344135::1710344139::1::::<><>::
 Y2mate.mx - New Danganronpa V3 O.S.T. White - 10. Become Friends (256 kbps).mp3::AudioStreamMP3::753694102863397556::1710343684::1710343686::1::::<><>::
-::res://Scenes/::1710536393
-test_dialogue.tscn::PackedScene::4306284018163157913::1710536393::0::1::::<><>::res://Scripts/DialogueHandler.gd<>uid://inisfng23nlf::::res://Sprites/textbox.png<>uid://cbmb1wfiq3gb1::::res://Sprites/1645827872_6-abrakadabra-fun-p-danganronpa-komnati-11.jpg<>uid://2vxnrinqyj7h::::res://Dialogues/test.tres<>uid://cghct3404ynsx::::res://Sprites/яро1.png<>uid://k0dh46awlt05::::res://Music/Y2mate.mx - New Danganronpa V3 O.S.T. White - 10. Become Friends (256 kbps).mp3<>uid://cs1r5pxlfs04b::::res://Music/Danganronpa Sound Effect - Text Advancing (256  kbps).mp3
-::res://Scripts/::1710536391
+::res://Scenes/::1710587388
+test_dialogue.tscn::PackedScene::4306284018163157913::1710587388::0::1::::<><>::res://Scripts/DialogueHandler.gd<>uid://inisfng23nlf::::res://Sprites/textbox.png<>uid://cbmb1wfiq3gb1::::res://Sprites/1645827872_6-abrakadabra-fun-p-danganronpa-komnati-11.jpg<>uid://2vxnrinqyj7h::::res://Dialogues/test.tres<>uid://cghct3404ynsx::::res://Sprites/яро1.png<>uid://k0dh46awlt05::::res://Music/Y2mate.mx - New Danganronpa V3 O.S.T. White - 10. Become Friends (256 kbps).mp3<>uid://cs1r5pxlfs04b::::res://Music/Danganronpa Sound Effect - Text Advancing (256  kbps).mp3
+::res://Scripts/::1710587368
 DialogueHandler.gd::GDScript::-1::1710536391::0::1::::<>CanvasLayer<>::
-DialogueImporter.gd::GDScript::-1::1710535861::0::1::::<>EditorScript<>::
+DialogueImporter.gd::GDScript::-1::1710587368::0::1::::<>EditorScript<>::
 DialogueResource.gd::GDScript::-1::1710535837::0::1::::Dialogue<>Resource<>::
-::res://Sprites/::1710536438
+::res://Sprites/::1710536441
 1645827872_6-abrakadabra-fun-p-danganronpa-komnati-11.jpg::CompressedTexture2D::4867911055330943092::1710336034::1710336035::1::::<><>::
 1672750543_1-zefirka-club-p-danganronpa-foni-iz-igri-1.jpg::CompressedTexture2D::9192957895931451469::1710536438::1710536441::1::::<><>::
 textbox.png::CompressedTexture2D::588865823148473663::1710333716::1710333717::1::::<><>::

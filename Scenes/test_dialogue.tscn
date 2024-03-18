@@ -8,21 +8,6 @@
 [ext_resource type="AudioStream" uid="uid://k0dh46awlt05" path="res://Music/Y2mate.mx - New Danganronpa V3 O.S.T. White - 10. Become Friends (256 kbps).mp3" id="6_b43y7"]
 [ext_resource type="AudioStream" uid="uid://cs1r5pxlfs04b" path="res://Music/Danganronpa Sound Effect - Text Advancing (256  kbps).mp3" id="6_hbx8i"]
 
-[sub_resource type="Animation" id="Animation_knrra"]
-resource_name = "change_bg"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 1), Color(1, 1, 1, 1)]
-}
-
 [sub_resource type="Animation" id="Animation_u8q56"]
 length = 0.001
 tracks/0/type = "value"
@@ -36,6 +21,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_knrra"]
+resource_name = "change_bg"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 1), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_io3at"]
@@ -162,6 +162,8 @@ offset_right = 1739.0
 offset_bottom = 792.0
 theme_override_font_sizes/normal_font_size = 51
 text = "auto!!!!!!!!!"
+
+[node name="Voice" type="AudioStreamPlayer" parent="DialogueUI"]
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_b43y7")

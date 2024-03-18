@@ -1,15 +1,18 @@
-[gd_resource type="Resource" script_class="Dialogue" load_steps=7 format=3 uid="uid://2vxnrinqyj7h"]
+[gd_resource type="Resource" script_class="Dialogue" load_steps=9 format=3 uid="uid://2vxnrinqyj7h"]
 
 [ext_resource type="Texture2D" uid="uid://d38ew5q2qt574" path="res://Sprites/1672750543_1-zefirka-club-p-danganronpa-foni-iz-igri-1.jpg" id="1_2p2o1"]
 [ext_resource type="Texture2D" uid="uid://cbmb1wfiq3gb1" path="res://Sprites/1645827872_6-abrakadabra-fun-p-danganronpa-komnati-11.jpg" id="1_h7umm"]
-[ext_resource type="Texture2D" uid="uid://cghct3404ynsx" path="res://Sprites/яро1.png" id="1_yccs6"]
 [ext_resource type="Texture2D" uid="uid://jc6gpifmtjg4" path="res://Sprites/яро2.png" id="2_bdppl"]
+[ext_resource type="Texture2D" uid="uid://bpa46bvrvkj8a" path="res://Dialogues/photo_2024-03-16_13-58-23.jpg" id="3_6p0xm"]
 [ext_resource type="Texture2D" uid="uid://c1nskf30i5rm0" path="res://Sprites/яро3.png" id="3_oas3o"]
 [ext_resource type="Script" path="res://Scripts/DialogueResource.gd" id="4_jvvfi"]
+[ext_resource type="Texture2D" uid="uid://bhnx15gce3tjf" path="res://Dialogues/photo_2024-03-16_14-03-16.jpg" id="4_kgaja"]
+[ext_resource type="AudioStream" uid="uid://cs1r5pxlfs04b" path="res://Music/Danganronpa Sound Effect - Text Advancing (256  kbps).mp3" id="7_kuht8"]
 
 [resource]
 script = ExtResource("4_jvvfi")
 dialogueName = Array[String](["Яро", "Яро", "Яморо", "Яро", "Яро", "Яро"])
 dialogueText = Array[String](["Привет.", "Я крутой.", "Нет...", "............", "Меня ещё никогда так сильно не унижали.", "ЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖЖ"])
-dialogueSprite = Array[Texture2D]([ExtResource("1_yccs6"), ExtResource("1_yccs6"), ExtResource("1_yccs6"), ExtResource("2_bdppl"), ExtResource("3_oas3o"), ExtResource("2_bdppl")])
+dialogueSprite = Array[Texture2D]([ExtResource("3_6p0xm"), ExtResource("4_kgaja"), ExtResource("3_6p0xm"), ExtResource("2_bdppl"), ExtResource("3_oas3o"), ExtResource("2_bdppl")])
+dialogueVoice = Array[AudioStream]([ExtResource("7_kuht8"), null, null, null, null, null])
 dialogueBackground = Array[Texture2D]([ExtResource("1_h7umm"), null, null, ExtResource("1_2p2o1"), null, null])

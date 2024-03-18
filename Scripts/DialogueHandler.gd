@@ -7,8 +7,10 @@ extends CanvasLayer
 @onready var charText : RichTextLabel = $Text
 @onready var charAnim : AnimationPlayer = $Sprite/SpriteAnimation
 @onready var bgAnim : AnimationPlayer = $BG/BGAnimation
-@onready var sfxClick : AudioStreamPlayer = $Click
 @onready var autoHolder : RichTextLabel = $"Auto"
+
+@onready var sfxClick : AudioStreamPlayer = $Click
+@onready var voicePlayer : AudioStreamPlayer = $Voice
 
 var inDialogue : bool = false
 var curProgress : int = 0
@@ -55,6 +57,9 @@ func proceed_dialogue():
 		charName.text = curDialogue.dialogueName[curProgress]
 		charText.text = curDialogue.dialogueText[curProgress]
 		text_appear()
+		voicePlayer.stop()
+		voicePlayer.stream = curDialogue.dialogueVoice[curProgress]
+		voicePlayer.play()
 		if (curProgress != 0):
 			sfxClick.play()
 		if (curProgress != 0 and curDialogue.dialogueSprite[curProgress] != curDialogue.dialogueSprite[curProgress - 1]):
